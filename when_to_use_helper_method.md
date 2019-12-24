@@ -124,7 +124,7 @@ end
 
 ```
 
-Instead of redefining the `adopted?` method in the helper file you can define it in the controller like above and then use a rails method called `helper_method` which allows you to use that method the same you would a helper method https://apidock.com/rails/ActionController/Helpers/ClassMethods/helper_method. You can also pass multiple methods into it as arguments.
+Instead of redefining the `available?` method in the helper file you can define it in the controller like above and then use a rails method called `helper_method` which allows you to use that method the same you would a helper method https://apidock.com/rails/ActionController/Helpers/ClassMethods/helper_method. You can also pass multiple methods into it as arguments.
 
 You would call `helper_method` like this in the controller:
 ```ruby
@@ -135,8 +135,7 @@ then in the view:
 ```erb
 <div class='cats'>
   <% @all_cats.each do %>
-    <div><%= cat.name %> <%= 'available' unless adopted?(cat) %></div>
+    <div><%= cat.name %> <%= 'available' if available?(cat) %></div>
   <% end %>
 </div>
 ```
-
