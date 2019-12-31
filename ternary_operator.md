@@ -4,8 +4,8 @@ Ternary Operators in are used in place of `if/else` conditional statements. Usin
 
 Ternary Operators thave 3 parts.
 - The condition
-- Result if the condition evaluates to true
-- Result if the condition evaluates to false
+- The result if the condition evaluates to true
+- The result if the condition evaluates to false
 
 ## Example
 
