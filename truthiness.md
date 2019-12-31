@@ -1,4 +1,4 @@
-## Truthiness
+## Ruby Truthiness
 
 Truthiness is the concept that every object is true except for false and nil. This means that you can use any element in a condition without using it in a boolean expression.
 
